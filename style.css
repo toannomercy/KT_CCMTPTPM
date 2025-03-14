@@ -15,3 +15,13 @@ footer {
     background-color: #f8f9fa;
     padding: 20px;
 }
+.card-img-top {
+    width: 100%; /* Đảm bảo ảnh co dãn theo chiều rộng */
+    height: 250px; /* Đặt chiều cao cố định */
+    object-fit: cover; /* Cắt ảnh để vừa khít với khung */
+
+}
+.card {
+    margin-bottom: 20px; /* Tạo khoảng cách giữa các card */
+}
+
