@@ -1,39 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trang Chủ - Nhóm Lập Trình</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Nhóm Sinh Viên</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="students/lehuutoan.html">Lê Hữu Toàn</a></li>
-                    <li class="nav-item"><a class="nav-link" href="students/student2.html">Student 2</a></li>
-                    <li class="nav-item"><a class="nav-link" href="students/student3.html">Student 3</a></li>
-                </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Nhóm Lập Trình</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#gioithieu">Giới Thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#thanhvien">Thành Viên</a></li>
+                <li class="nav-item"><a class="nav-link" href="#lienhe">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="bg-primary text-white text-center py-5">
+    <h1>Chào mừng đến với nhóm lập trình!</h1>
+    <p>Khám phá và học hỏi cùng nhau</p>
+</header>
+
+<section id="gioithieu" class="container py-5">
+    <h2 class="text-center">Giới Thiệu</h2>
+    <p class="text-center">Chúng tôi là nhóm sinh viên đam mê lập trình, học hỏi và phát triển cùng nhau.</p>
+</section>
+
+<section id="thanhvien" class="container py-5">
+    <h2 class="text-center">Thành Viên Nhóm</h2>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./assets/images/lehuutoan.jpg" class="card-img-top" alt="Toàn">
+                <div class="card-body">
+                    <h5 class="card-title">Lê Hữu Toàn</h5>
+                    <a href="./students/lehuutoan.html" class="btn btn-primary">Xem CV</a>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <div class="container d-flex flex-column min-vh-100">
-        <header class="text-center my-5 flex-grow-1">
-            <h1>Chào mừng đến với trang web nhóm!</h1>
-            <p>Giới thiệu về nhóm và dự án của chúng tôi.</p>
-        </header>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="thanh.jpg" class="card-img-top" alt="Thành">
+                <div class="card-body">
+                    <h5 class="card-title">Nguyễn Văn Võ Thành</h5>
+                    <a href="#" class="btn btn-primary">Xem CV</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="binh.jpg" class="card-img-top" alt="Bình">
+                <div class="card-body">
+                    <h5 class="card-title">Trần Văn Bình</h5>
+                    <a href="#" class="btn btn-primary">Xem CV</a>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
 
-    <footer class="text-center py-4 bg-light mt-auto">
-        <p>&copy; 2025 Nhóm Sinh Viên</p>
-    </footer>
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Nhóm Lập Trình. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
