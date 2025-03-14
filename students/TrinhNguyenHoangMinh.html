@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Trinh Nguyen Hoang Minh - Software Engineer</title>
+		<!-- Google Font -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+			rel="stylesheet" />
+		<style>
+			/* Reset & Basic Setup */
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				font-family: "Roboto", sans-serif;
+				background: #f4f4f4;
+				color: #333;
+				line-height: 1.6;
+			}
+			/* Fixed Header */
+			header {
+				background: #333;
+				color: #fff;
+				padding: 1rem 0;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 100;
+			}
+			nav ul {
+				list-style: none;
+				display: flex;
+				justify-content: center;
+			}
+			nav ul li {
+				margin: 0 1rem;
+			}
+			nav ul li a {
+				color: #fff;
+				text-decoration: none;
+				font-weight: bold;
+				transition: color 0.3s;
+			}
+			nav ul li a:hover {
+				color: #ffd700;
+			}
+			/* Main Container (with top padding for fixed header) */
+			.container {
+				max-width: 1000px;
+				margin: 0 auto;
+				padding: 6rem 1rem 2rem; /* top padding to avoid overlap with fixed header */
+			}
+			section {
+				padding: 2rem 0;
+				border-bottom: 1px solid #ddd;
+			}
+			h1,
+			h2,
+			h3 {
+				margin-bottom: 1rem;
+			}
+			h1 {
+				font-size: 2rem;
+				text-transform: uppercase;
+			}
+			h2 {
+				font-size: 1.75rem;
+				text-transform: uppercase;
+				text-align: center;
+			}
+			h3 {
+				font-size: 1.3rem;
+				margin-bottom: 0.5rem;
+			}
+			/* Top Intro Section */
+			.profile-header {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
+			.avatar {
+				width: 140px;
+				height: 140px;
+				border-radius: 50%;
+				object-fit: cover;
+				margin-bottom: 1rem;
+			}
+			.profile-header h1 {
+				font-size: 2rem;
+				margin-bottom: 0.5rem;
+			}
+			.profile-header .subtitle {
+				font-size: 1.1rem;
+				color: #555;
+				margin-bottom: 1rem;
+			}
+			/* Subsections Lists */
+			ul {
+				list-style: none;
+				margin-left: 1rem;
+			}
+			li {
+				margin-bottom: 0.5rem;
+			}
+			/* Footer */
+			footer {
+				background: #333;
+				color: #fff;
+				text-align: center;
+				padding: 1rem;
+			}
+			/* Contact links */
+			a.link {
+				color: #0077b5;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			a.link:hover {
+				text-decoration: underline;
+			}
+			/* Simple highlight style for headings or important text */
+			.highlight {
+				color: #0077b5;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Header / Navigation -->
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#summary">Summary</a></li>
+					<li><a href="#experience">Work Experience</a></li>
+					<li><a href="#skills">Technical Skills</a></li>
+					<li><a href="#certificates">Education</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main Content -->
+		<div class="container">
+			<!-- Profile Header -->
+			<section class="profile-header" id="summary">
+				<img
+					src="../assets/images/TrinhNguyenHoangMinh.jpg"
+					alt="Avatar - Trinh Nguyen Hoang Minh"
+					class="avatar" />
+				<h1>Trinh Nguyen Hoang Minh</h1>
+				<div class="subtitle">Intern Software Engineer</div>
+				<p>
+					Seasoned, forward-thinking Software Engineer with a strong background
+					in creating and executing innovative software solutions to enhance
+					business productivity. Skilled at development, architecture,
+					implementation.
+				</p>
+			</section>
+
+			<!-- Work Experience -->
+			<section id="experience">
+				<h2>Work Experience</h2>
+				<h3>Thesis Management System (2025 - Present)</h3>
+				<ul>
+					<li>
+						Developed a scalable backend system enabling real-time collaboration
+						between students and faculty.
+					</li>
+					<li>
+						Designed and implemented business logic and domain models, ensuring
+						a maintainable architecture.
+					</li>
+					<li>
+						Built a secure role-based access control (RBAC) system for students,
+						reviewers, and administrators.
+					</li>
+					<li>
+						Optimized database queries and caching strategies using Redis,
+						reducing response time by 40%.
+					</li>
+					<li>
+						Integrated WebSockets with Redis Pub/Sub for real-time notifications
+						on submission updates and approvals.
+					</li>
+					<li>
+						Documented RESTful APIs for seamless frontend integration, focusing
+						on performance and security.
+					</li>
+					<li>
+						Implemented comprehensive testing (unit, integration, and API tests)
+						to improve reliability and maintainability.
+					</li>
+					<li>
+						Collaborated with UI/UX designers and academic stakeholders to
+						ensure compliance with university policies.
+					</li>
+					<li>
+						<strong>Tech Stack:</strong> NodeJS – Redis – PostgreSQL –
+						WebSockets
+					</li>
+				</ul>
+
+				<h3>Book Store Management System (2024 - 2025)</h3>
+				<ul>
+					<li>
+						Built a scalable backend for managing books, orders, and customer
+						interactions using Laravel Framework.
+					</li>
+					<li>
+						Designed and implemented a structured domain model for books, users,
+						orders, and inventory.
+					</li>
+					<li>
+						Created RESTful APIs to handle book search, order processing, and
+						payment integration, boosting transaction efficiency.
+					</li>
+					<li>
+						Implemented Redis caching, reducing database queries by 50% and
+						improving API response time by 40%.
+					</li>
+					<li>
+						Optimized MySQL queries and indexing, reducing execution time by 35%
+						and enhancing search performance.
+					</li>
+					<li>
+						Integrated RBAC for administrators, sellers, and customers, ensuring
+						data protection.
+					</li>
+					<li>
+						Utilized Laravel Queues and Redis for background job processing,
+						improving order speed and reducing server load.
+					</li>
+					<li>
+						Conducted thorough unit, API, and integration testing for
+						reliability and maintainability.
+					</li>
+					<li>
+						Collaborated with frontend developers and UX designers to enhance
+						user experience.
+					</li>
+					<li>
+						<strong>Tech Stack:</strong> Laravel – ReactJS – TailwindCSS – MySQL
+						– Redis
+					</li>
+				</ul>
+			</section>
+
+			<!-- Technical Skills -->
+			<section id="skills">
+				<h2>Technical Skills</h2>
+				<ul>
+					<li>Java, Spring Boot, NodeJS, Golang, PHP</li>
+					<li>HTML, CSS, React, TailwindCSS</li>
+					<li>MySQL, PostgreSQL, MongoDB, Redis</li>
+					<li>CI/CD (GitHub Actions, GitLab CI), Docker</li>
+					<li>Automation Testing, Unit Testing, Performance Testing</li>
+				</ul>
+			</section>
+
+			<!-- Certificates -->
+			<section id="certificates">
+				<h2>Education</h2>
+				<ul>
+					<li><h3>HUTECH | 2021 - 2025</h3></li>
+					<li>Engineer’s Degree in Software Engineering</li>
+					<li>- GPA: 3.0</li>
+					<li>- Rising Talent Award - HUTECH IT GOT TALENT</li>
+				</ul>
+			</section>
+
+			<!-- Contact -->
+			<section id="contact">
+				<h2>Contact</h2>
+				<p><strong>Location:</strong> Ho Chi Minh City, Vietnam</p>
+				<p>
+					<strong>Email:</strong>
+					<a class="link" href="mailto:hoangminh332001@gmail.com"
+						>hoangminh332001@gmail.com</a
+					>
+				</p>
+				<p>
+					<strong>LinkedIn:</strong>
+					<a
+						class="link"
+						href="https://www.linkedin.com/in/minh-trinh-205660222/"
+						target="_blank">
+						Trinh Nguyen Hoang Minh
+					</a>
+				</p>
+				<p>
+					<strong>GitHub:</strong>
+					<a
+						class="link"
+						href="https://github.com/JustCallMeMin"
+						target="_blank">
+						JustCallMeMin
+					</a>
+				</p>
+				<p><strong>Phone:</strong> +84 368 803 940</p>
+			</section>
+		</div>
+
+		<footer>
+			<p>&copy; 2025 - Trinh Nguyen Hoang Minh. All rights reserved.</p>
+		</footer>
+	</body>
+</html>
