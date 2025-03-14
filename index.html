@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
@@ -29,15 +31,15 @@
     <p>Khám phá và học hỏi cùng nhau</p>
 </header>
 
-<section id="gioithieu" class="container py-5">
-    <h2 class="text-center">Giới Thiệu</h2>
-    <p class="text-center">Chúng tôi là nhóm sinh viên đam mê lập trình, học hỏi và phát triển cùng nhau.</p>
+<section class="container py-5">
+    <h2 class="text-center">Tìm kiếm Thành Viên</h2>
+    <input type="text" id="searchInput" class="form-control w-50 mx-auto" placeholder="Nhập tên sinh viên...">
 </section>
 
 <section id="thanhvien" class="container py-5">
     <h2 class="text-center">Thành Viên Nhóm</h2>
-    <div class="row text-center">
-        <div class="col-md-4">
+    <div class="row text-center" id="studentList">
+        <div class="col-md-4 student-item">
             <div class="card">
                 <img src="./assets/images/lehuutoan.jpg" class="card-img-top" alt="Toàn">
                 <div class="card-body">
@@ -46,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 student-item">
             <div class="card">
                 <img src="./assets/images/NguyenVanVoThanh.jpg" class="card-img-top" alt="Thành">
                 <div class="card-body">
@@ -55,16 +57,16 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 student-item">
             <div class="card">
-                <img src="./assets/images/TrinhNguyenHoangMinh.jpg" class="card-img-top" alt="Bình">
+                <img src="./assets/images/TrinhNguyenHoangMinh.jpg" class="card-img-top" alt="Minh">
                 <div class="card-body">
                     <h5 class="card-title">Trình Nguyễn Hoàng Minh</h5>
-                    <a href="/students/TrinhNguyenHoangMinh.html" class="btn btn-primary">Xem CV</a>
+                    <a href="./students/TrinhNguyenHoangMinh.html" class="btn btn-primary">Xem CV</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 student-item">
             <div class="card">
                 <img src="./assets/images/nguyenqungbinh.png" class="card-img-top" alt="Bình">
                 <div class="card-body">
@@ -73,9 +75,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 student-item">
             <div class="card">
-                <img src="./assets/images/avatar.png" class="card-img-top" alt="Bình">
+                <img src="./assets/images/avatar.png" class="card-img-top" alt="Đức">
                 <div class="card-body">
                     <h5 class="card-title">Trần Thiên Đức</h5>
                     <a href="./students/TranThienDuc.html" class="btn btn-primary">Xem CV</a>
@@ -90,6 +92,21 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+<script>
+    document.getElementById("searchInput").addEventListener("keyup", function () {
+        let searchValue = this.value.toLowerCase();
+        let students = document.querySelectorAll(".student-item");
+
+        students.forEach(student => {
+            let studentName = student.querySelector(".card-title").textContent.toLowerCase();
+            if (studentName.includes(searchValue)) {
+                student.style.display = "block";
+            } else {
+                student.style.display = "none";
+            }
+        });
+    });
+</script>
 </body>
+
 </html>
